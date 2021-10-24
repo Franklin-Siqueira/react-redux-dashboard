@@ -10,9 +10,9 @@
 <!-- [![Github Badge Classes](https://img.shields.io/badge/-Github%20Classes-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/Franklin-Siqueira-Classes)](https://github.com/Franklin-Siqueira-Classes) -->
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/franklin-c-siqueira/)](https://www.linkedin.com/in/franklin-c-siqueira/)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:franklin.cs.design@gmail.com)](mailto:franklin.cs.design@gmail.com/)
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/marcopollivier)](https://twitter.com/FranklinSiquei9)
-<!-- [![Youtube Badge](https://img.shields.io/badge/-Youtube-FF0000?style=flat-square&logo=Youtube&logoColor=white&link=https://youtube.com/marcopollivier)](https://youtube.com/franklinsiqueira) -->
-[![Dev.to Badge](https://img.shields.io/badge/-Dev.to-363D44?style=flat-square&logo=Dev.to&logoColor=white&link=https://dev.to/marcopollivier)](https://dev.to/franklinsiqueira)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/FranklinSiquei9)](https://twitter.com/FranklinSiquei9)
+<!-- [![Youtube Badge](https://img.shields.io/badge/-Youtube-FF0000?style=flat-square&logo=Youtube&logoColor=white&link=https://youtube.com/franklinsiqueira](https://youtube.com/franklinsiqueira) -->
+[![Dev.to Badge](https://img.shields.io/badge/-Dev.to-363D44?style=flat-square&logo=Dev.to&logoColor=white&link=https://dev.to/franklinsiqueira)](https://dev.to/franklinsiqueira)
 
 
 [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg) [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)  [![Npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://npmjs.com/)
@@ -61,15 +61,15 @@ The original project can be studied at [Fernanda Hirose](https://github.com/Fern
 
 #### Installing
 
-'''bash
+```bash
 npm install
-'''
+```
 
 #### Starting Application
 
-'''bash
+```bash
 npm start
-'''
+```
 
 ---
 **Structure**
@@ -79,6 +79,25 @@ The source code is contained in the src folder...
 The ..
 <br />
 <br />
+
+---
+
+**Some Project's Requirements**
+
+```js
+// Dashboard.jsx
+import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
+import Chart from 'react-apexcharts'
+import { useSelector } from 'react-redux'
+
+...
+
+// Layout.jsx
+import React, {useEffect} from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+```
 
 ---
 **License**
@@ -97,7 +116,7 @@ This sample code is released using the MIT license. For more information see the
 [Fernanda Hirose](https://github.com/FernandaMakiHirose/dashboard-react)
 
 ### Dashboard Admin com Múltiplos Temas
-![img](https://user-images.githubusercontent.com/72028645/138145716-6550375f-ddf2-4eab-b3d6-5bae71162db3.png)
+<!-- ![img](https://user-images.githubusercontent.com/72028645/138145716-6550375f-ddf2-4eab-b3d6-5bae71162db3.png) -->
 
 ### Requisitos
 - Node.js 
