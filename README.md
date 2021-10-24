@@ -1,5 +1,5 @@
 
-## Uncle Franklin | Blog Exercise
+## React/Redux Dashboard | Original: From Fernanda Hirose
 
 ---
 
