@@ -1,11 +1,10 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 import React from 'react'
-
 import { Link } from 'react-router-dom'
-
 import './sidebar.css'
-
 import logo from '../../assets/images/logo.png'
-
 import sidebar_items from '../../assets/JsonData/sidebar_routes.json'
 
 const SidebarItem = props => {

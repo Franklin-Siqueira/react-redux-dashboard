@@ -1,17 +1,13 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 import React, {useEffect} from 'react'
-
 import { Link } from 'react-router-dom'
-
 import Chart from 'react-apexcharts'
-
 import { useSelector } from 'react-redux'
-
 import StatusCard from '../components/status-card/StatusCard'
-
 import Table from '../components/table/Table'
-
 import Badge from '../components/badge/Badge'
-
 import statusCards from '../assets/JsonData/status-card-data.json'
 
 const chartOptions = {
@@ -58,6 +54,11 @@ const topCustomers = {
             "price": "R$15,70"
         },
         {
+            "username": "Franklin Siqueira",
+            "order": "491",
+            "price": "R$55,00"
+        },
+        {
             "username": "Fabiana iva",
             "order": "250",
             "price": "R$12,51"
@@ -101,6 +102,13 @@ const latestOrders = {
         "status"
     ],
     body: [
+        {
+            id: "#OD1755",
+            user: "Franklin Siqueira",
+            date: "24 Oct 2021",
+            price: "R$55,00",
+            status: "enviado"
+        },
         {
             id: "#OD1711",
             user: "João doe",

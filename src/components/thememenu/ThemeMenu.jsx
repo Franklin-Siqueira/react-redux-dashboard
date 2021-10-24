@@ -1,9 +1,9 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 import React, {useRef, useState, useEffect} from 'react'
-
 import './thememenu.css'
-
 import { useDispatch } from 'react-redux'
-
 import ThemeAction from '../../redux/actions/ThemeAction'
 
 const mode_settings = [
@@ -76,15 +76,10 @@ const ThemeMenu = () => {
     clickOutsideRef(menu_ref, menu_toggle_ref)
 
     const setActiveMenu = () => menu_ref.current.classList.add('active')
-
     const closeMenu = () => menu_ref.current.classList.remove('active')
-
     const [currMode, setcurrMode] = useState('light')
-
     const [currColor, setcurrColor] = useState('blue')
-
     const dispatch = useDispatch()
-
     const setMode = mode => {
         setcurrMode(mode.id)
         localStorage.setItem('themeMode', mode.class)
@@ -98,12 +93,11 @@ const ThemeMenu = () => {
     }
 
     useEffect(() => {
-        const themeClass = mode_settings.find(e => e.class === localStorage.getItem('themeMode', 'theme-mode-light'))
 
+        const themeClass = mode_settings.find(e => e.class === localStorage.getItem('themeMode', 'theme-mode-light'))
         const colorClass = color_settings.find(e => e.class === localStorage.getItem('colorMode', 'theme-mode-light'))
 
         if (themeClass !== undefined) setcurrMode(themeClass.id)
-
         if (colorClass !== undefined) setcurrColor(colorClass.id)
 
     }, []);
@@ -114,12 +108,12 @@ const ThemeMenu = () => {
                 <i className='bx bx-palette'></i>
             </button>
             <div ref={menu_ref} className="theme-menu">
-                <h4>Configuração de tema</h4>
+                <h4>Theme Adjust</h4>
                 <button className="theme-menu__close" onClick={() => closeMenu()}>
                     <i className='bx bx-x'></i>
                 </button>
                 <div className="theme-menu__select">
-                    <span>Escolher modo</span>
+                    <span>Choose Mode</span>
                     <ul className="mode-list">
                         {
                             mode_settings.map((item, index) => (
@@ -134,7 +128,7 @@ const ThemeMenu = () => {
                     </ul>
                 </div>
                 <div className="theme-menu__select">
-                    <span>Escolher cor</span>
+                    <span>Choose Color</span>
                     <ul className="mode-list">
                         {
                             color_settings.map((item, index) => (
